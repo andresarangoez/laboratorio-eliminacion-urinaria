@@ -1,3 +1,7 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Laboratorio de Eliminación Urinaria</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -131,6 +135,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .fig{margin:0;background:#FFFFFF;border:1px solid var(--line);border-radius:16px;padding:12px;min-width:0}
 .fig svg{display:block;width:100%;height:auto;max-height:440px;margin:0 auto}
 .fig.photo img{display:block;width:100%;max-height:320px;object-fit:contain;border-radius:10px;background:#FFFFFF}
+.fig video{display:block;width:100%;max-height:460px;border-radius:10px;background:#000}
 .fig figcaption{font-size:15px;color:var(--muted);margin-top:8px;line-height:1.4}
 .fig figcaption a{color:var(--navy)}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
@@ -302,7 +307,7 @@ const STATIONS = [
 <path d="M540 215 L464 215" stroke="#22744A" stroke-width="4"/><text x="490" y="235" font-size="13">Entra dializado limpio</text>
 <path d="M464 85 L540 85" stroke="#8A6D1E" stroke-width="4" stroke-dasharray="6 4"/><text x="476" y="75" font-size="13">Sale con desechos y agua</text>
 <text x="40" y="150" fill="#B3261E">Sangre que sale</text><text x="470" y="292" fill="#1C4587">Sangre que vuelve limpia</text>
-</svg><figcaption>La sangre sale por la fístula, pasa por el dializador y vuelve limpia. El dializado se lleva los desechos y el agua sobrante.</figcaption></figure><figure class="fig photo"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Dialysis_-_arm_-_01.jpg?width=1000" alt="Brazo de un paciente conectado a hemodiálisis" onerror="this.closest('figure').remove()"><figcaption>Foto: brazo conectado a hemodiálisis. <a href="https://commons.wikimedia.org/wiki/File:Dialysis_-_arm_-_01.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure><figure class="fig photo"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Hemodialysismachine.jpg?width=1000" alt="Máquina de hemodiálisis" onerror="this.closest('figure').remove()"><figcaption>Foto: máquina de hemodiálisis. <a href="https://commons.wikimedia.org/wiki/File:Hemodialysismachine.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure></div><p class="ref">Esquema: elaboración propia. Referencias: 8, 9</p>`},
+</svg><figcaption>La sangre sale por la fístula, pasa por el dializador y vuelve limpia. El dializado se lleva los desechos y el agua sobrante.</figcaption></figure><figure class="fig vid"><video controls playsinline preload="metadata" poster="videos/hemodialisis.jpg" src="videos/hemodialisis.mp4"></video><figcaption><b>Video:</b> paciente conectado a hemodiálisis. Observa las líneas del catéter y el circuito.</figcaption></figure><figure class="fig photo"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Dialysis_-_arm_-_01.jpg?width=1000" alt="Brazo de un paciente conectado a hemodiálisis" onerror="this.closest('figure').remove()"><figcaption>Foto: brazo conectado a hemodiálisis. <a href="https://commons.wikimedia.org/wiki/File:Dialysis_-_arm_-_01.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure><figure class="fig photo"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Hemodialysismachine.jpg?width=1000" alt="Máquina de hemodiálisis" onerror="this.closest('figure').remove()"><figcaption>Foto: máquina de hemodiálisis. <a href="https://commons.wikimedia.org/wiki/File:Hemodialysismachine.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure></div><p class="ref">Esquema: elaboración propia. Referencias: 8, 9</p>`},
    {t:'Así funciona la diálisis peritoneal', h:`<div class="figs"><figure class="fig"><svg viewBox="0 0 640 360" role="img" aria-label="Esquema de diálisis peritoneal" font-family="Raleway,system-ui,sans-serif" font-size="15" fill="#14284B">
 <rect x="0" y="0" width="640" height="360" fill="#FFFFFF"/>
 <path d="M170 40 Q120 140 150 260 Q200 320 300 320 Q400 320 450 260 Q480 140 430 40 Z" fill="#F6D7C6" stroke="#14284B" stroke-width="2"/>
